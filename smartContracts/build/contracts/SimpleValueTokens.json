@@ -1,0 +1,125 @@
+{
+  "contract_name": "SimpleValueTokens",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "currency",
+          "type": "uint256"
+        }
+      ],
+      "name": "convert2Tokens",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "name": "numTokens",
+          "type": "uint256"
+        }
+      ],
+      "name": "PayTokens",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "numTokens",
+          "type": "uint256"
+        }
+      ],
+      "name": "convert2Currency",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "TOKEN2INRRATE",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052600a60015534610000575b600160a060020a03321660009081526020819052604090206161a890555b5b6102178061003d6000396000f300606060405263ffffffff60e060020a6000350416632fdaabd781146100505780633152fddb14610072578063a1508c95146100a2578063da2dd1fb146100c4578063f8b2cb4f146100e3575b610000565b346100005761006060043561010e565b60408051918252519081900360200190f35b346100005761008e600160a060020a0360043516602435610123565b604080519115158252519081900360200190f35b34610000576100606004356101bb565b60408051918252519081900360200190f35b34610000576100606101c6565b60408051918252519081900360200190f35b3461000057610060600160a060020a03600435166101cc565b60408051918252519081900360200190f35b6000600154828115610000570490505b919050565b600160a060020a0333166000908152602081905260408120548290101561014c575060006101b5565b600160a060020a0333811660008181526020818152604080832080548890039055938716808352918490208054870190558351868152935191937fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef929081900390910190a35060015b92915050565b60015481025b919050565b60015481565b600160a060020a0381166000908152602081905260409020545b9190505600a165627a7a723058200ceee3ff8e9b250103ac094f78b710f9b5c3fa95a320eb7ca50ec5f2a9a132030029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1494745550683
+}

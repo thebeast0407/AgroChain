@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+
+
+  <title>Agrochain</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="./js/web3.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+   <script src="./js/index.js" />
+   <script type="text/javascript">
+
+   </script>
+
+</head>
+
+<body style="height:100%;">
+  <nav  class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <ul  id="navul" class="nav navbar-nav" style="float:right;">
+        <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#">Orders</a></li>
+            <li><a href="#">Cart</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile View</a></li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+        </li> 
+      </ul>
+    </div>
+  </nav>
+
+
+
+<!----------------------------------Log In Form ------------------------------->
+<div id="login" class="container">
+	<section class="content" id="loginsection" style="margin-top:10%;">
+		<form action="">
+			<h1>Login</h1>
+			<div>
+				<input type="text" placeholder="Username"  id="username" />
+			</div>
+			<div>
+				<input type="password" placeholder="Password" id="password" />
+			</div>
+			<div>
+				<input type="submit" value="Log in" id="loginButton" />
+				<a  href="#">Forgot password?</a>
+				<a id="registerButton" href="#signup">Register</a>
+			</div>
+		</form><!-- form -->
+	</section><!-- content -->
+</div><!-- container -->
+
+<!------------------------------Register Form----------------------------------->
+<div id="signup" class="container">
+    <section class="content" id="registersection">
+      <form id="signupform" action="">
+        <h1>Register</h1>
+        <select id="slectUser" class="selectpicker" data-live-search="true">
+        <option value="" selected disabled>Select User</option>
+        <option value="farmer" data-tokens="farmer">Farmer</option>
+        <option value="government" data-tokens="government">Government Official</option>
+        <option value="consumer" data-tokens="consumer">Consumer</option>
+        </select>
+        <div>
+          <input type="text" placeholder="First Name" required="" id="firstname" />
+        </div>
+        <div>
+          <input type="text" placeholder="Middle Name"  id="middlename" />
+        </div>
+        <div>
+          <input type="text" placeholder="Last Name" required="" id="lastname" />
+        </div>
+        <div>
+          <input type="password" placeholder="Password" required="" id="registerpassword" />
+        </div>
+        <div>
+          <input type="password" placeholder=" Confirm Password" required="" id="confirmpassword" />
+        </div>
+        <div>
+          <input type="text" placeholder="Aadhar ID" required="" id="aadharid" />
+        </div>
+        <div>
+          <input type="text" placeholder="Permanent Address" required="" id="address" />
+        </div>
+        <div>
+          <input type="text" placeholder="Contact" required="" id="contact" />
+        </div>
+        <div>
+          <input id="register" type="submit" value="Register" />
+        </div>
+      </form><!-- form -->
+    </section><!-- content -->
+</div><!-- container -->
+
+
+<!-----------------------------------Home ------------------------------------>
+<div id="home" class="container">
+<section> 
+  <div class="search_box pull-right">
+ 	<input type="text" placeholder="Search">
+ 	</div>
+	
+  <div class="col-sm-3" id="sidetab">
+      <div id="sidtab">
+        <h2>Filters</h2>
+      </div>
+    <div class="panel-default">
+      <a>Price</a>
+      <hr/>
+      <a>Crop</a>
+    </div> 
+  </div>
+  
+    <div class="col-sm-6">
+		<div>
+			<input type="submit" value="Add New Season" id="addSeason" /> 
+		</div>
+	</div
+
+    <div class="col-sm-9">
+    <div class="tile">
+      <div class="tile-subdiv">
+        <img class="tileimg" src="./images/rice.png" alt>
+        <h4>Season Sep16-Feb17 </h4>
+        <h4>Show Details</h4>
+      </div>
+
+    </div>
+    <div class="tile">
+      <div class="tile-subdiv">
+        <img class="tileimg" src="./images/rabhi.jpg" alt>
+        <h4>Season Feb17-Jun17 </h4>
+        <h4>Show Details</h4>
+      </div>
+
+    </div> 
+
+  </div>
+  </section>
+</div> 
+<!---------------------------------Home - 2nd Page  ------------------------------------------------------>
+
+<!-------------------------------------Cart------------------------------------>
+<div class="container">
+<section id="cart_items"> 
+    <div class="table-responsive cart_info">
+      <table class="table table-condensed">
+        <thead>
+          <tr class="cart_menu">
+            <td class="image">Item</td>
+            <td class="description"></td>
+            <td class="price">Price</td>
+            <td class="quantity">Quantity</td>
+            <td class="total">Total</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <td> 
+             </td> 
+           </tr>
+        </tbody>
+      </table>
+    </div>
+
+</section><!--/#cart_items-->
+</div>
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbHmbl7pfP9ID_6lhfj-kp7D2JxjPkJI4&libraries=places&callback=initMap" async defer></script>
+-->
+
+</body>
+</html>
